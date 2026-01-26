@@ -172,8 +172,8 @@ annual_ch4co_realizations <- foreach(c = seq_along(cities), .combine = rbind) %d
 # ---------------------------------------------------------------------------------------------
 # Produce Realizations of Annual CO Emissions from EDGARv8.1
 # ---------------------------------------------------------------------------------------------
-co_emissions_path_full_uncertainty <- paste0(path_to_data, "EDGAR_co_emissions_realizations/revised/full_uncertainty/")
-co_emissions_path_SRON_uncertainty <- paste0(path_to_data, "EDGAR_co_emissions_realizations/revised/SRON_uncertainty/")
+co_emissions_path_full_uncertainty <- paste0(path_to_data, "EDGAR_co_emissions_realizations/full_uncertainty/")
+co_emissions_path_SRON_uncertainty <- paste0(path_to_data, "EDGAR_co_emissions_realizations/SRON_uncertainty/")
 
 # ANNUAL FULL UNCERT
 co_full_realizations <- foreach(c = seq_along(cities), .combine = rbind) %do% {
@@ -529,7 +529,7 @@ write.table(annual_total_sum_matchmos_df, paste0(path_to_data, "results/annual_s
 # save realizations for analysis:
 # -------------------------------
 # ch4co realizations
-write.table(annual_ch4co_realizations, paste0(path_to_data, "results/realizations/reannual_ch4co_realizations.csv"), row.names = FALSE, sep = ",")
+write.table(annual_ch4co_realizations, paste0(path_to_data, "results/realizations/annual_ch4co_realizations.csv"), row.names = FALSE, sep = ",")
 
 
 # ch4 emission realizations
