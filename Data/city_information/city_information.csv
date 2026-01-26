@@ -1,0 +1,162 @@
+﻿code,city,country,name,region,lat,lon,latlon,C40,coastal
+abi,Abidjan,Côte d’Ivoire,"Abidjan, Côte d’Ivoire",Africa,5.3599517,-4.0082563,"5.3599517,-4.0082563",1,1
+acc,Accra,Ghana,"Accra, Ghana",Africa,5.5600141,-0.2057447,"5.5600141,-0.2057447",1,1
+add,Addis Ababa,Ethiopia,"Addis Ababa, Ethiopia",Africa,9.0322326,38.7464996,"9.0322326,38.7464996",1,0
+ahm,Ahmedabad,India,"Ahmedabad, India",South & West Asia,23.0225,72.5714,"23.0225,72.5714",1,0
+amm,Amman,Jordan,"Amman, Jordan",South & West Asia,31.9454,35.9284,"31.9454,35.9284",1,0
+ams,Amsterdam,The Netherlands,"Amsterdam, The Netherlands",Europe,52.3675734,4.9041385,"52.3675734,4.9041385",1,0
+asu,Asunción,Paraguay,"Asunción, Paraguay",Latin America,-25.30066,-57.63591,"-25.30066,-57.63591",0,0
+ath,Athens,Greece,"Athens, Greece",Europe,37.9838096,23.7275388,"37.9838096,23.7275388",1,0
+atl,Atlanta,USA,"Atlanta, USA",North America,33.7488,-84.3877,"33.7488,-84.3877",0,0
+auk,Auckland,New Zealand,"Auckland, New Zealand","East, Southeast Asia & Oceania",-36.8484606,174.7633329,"-36.8484606,174.7633329",1,0
+aus,"Austin,TX",USA,"Austin,TX, USA",North America,30.2672,-97.7431,"30.2672,-97.7431",1,0
+bag,Baghdad,Iraq,"Baghdad, Iraq",South & West Asia,33.3152,44.3661,"33.3152,44.3661",0,0
+bar,Barcelona,Spain,"Barcelona, Spain",Europe,41.3850639,2.1734035,"41.3850639,2.1734035",1,1
+bei,Beijing,China,"Beijing, China",Central East Asia,39.9041999,116.4073963,"39.9041999,116.4073963",1,0
+ben,Bengaluru,India,"Bengaluru, India",South & West Asia,12.9716,77.5946,"12.9716,77.5946",1,0
+ber,Berlin,Germany,"Berlin, Germany",Europe,52.5200066,13.404954,"52.5200066,13.404954",1,0
+bgk,Bangkok,Thailand,"Bangkok, Thailand","East, Southeast Asia & Oceania",13.7563309,100.5017651,"13.7563309,100.5017651",1,1
+blt,Baltimore,USA,"Baltimore, USA",North America,39.2904,-76.6122,"39.2904,-76.6122",0,0
+bog,Bogotá,Colombia,"Bogotá, Colombia",Latin America,4.711,-74.0721,"4.711,-74.0721",1,0
+bos,"Boston,MA",USA,"Boston,MA, USA",North America,42.3601,-71.0589,"42.3601,-71.0589",1,1
+bra,Brasilia,Brazil,"Brasilia,Brazil",Latin America,-15.793889,-47.882778,"-15.793889,-47.882778",0,0
+bue,Buenos Aires,Argentina,"Buenos Aires, Argentina",Latin America,-34.6118,-58.4173,"-34.6118,-58.4173",1,1
+cai,Cairo,Egypt,"Cairo, Egypt",Africa,30.0444,31.2357,"30.0444,31.2357",0,0
+cal,Calgary,Canada,"Calgary, Canada",North America,51.049999,-114.066666,"51.049999,-114.066666",0,0
+cdu,Chengdu,China,"Chengdu, China",Central East Asia,30.572816,104.066801,"30.572816,104.066801",1,0
+cha,"Charlotte,NC",USA,"Charlotte,NC, USA",North America,35.2216,-80.8401,"35.2216,-80.8401",0,0
+che,Chennai,India,"Chennai, India",South & West Asia,13.0827,80.2707,"13.0827,80.2707",1,1
+chi,"Chicago,IL",USA,"Chicago,IL, USA",North America,41.8781,-87.6298,"41.8781,-87.6298",1,1
+cho,Chongqing,China,"Chongqing, China",Central East Asia,29.564667323997277,106.55106154718992,"29.564667323997277,106.55106154718992",0,0
+cin,"Cincinnati,OH",USA,"Cincinnati,OH, USA",North America,39.1031,-84.512,"39.1031,-84.512",0,0
+cle,"Cleveland,OH",USA,"Cleveland,OH, USA",North America,41.4993,-81.6944,"41.4993,-81.6944",0,1
+col,"Columbia,OH",USA,"Columbia,OH, USA",North America,39.9625,-83.0032,"39.9625,-83.0032",1,1
+cop,Copenhagen,Denmark,"Copenhagen, Denmark",Europe,55.6760968,12.5683371,"55.6760968,12.5683371",1,1
+cpt,Cape Town,South Africa,"Cape Town, South Africa",Africa,-33.9248685,18.4240553,"-33.9248685,18.4240553",1,1
+cur,Curitiba,Brazil,"Curitiba, Brazil",Latin America,-25.4292,-49.2715,"-25.4292,-49.2715",1,0
+dak,Dakar,Senegal,"Dakar, Senegal",Africa,14.692778,-17.446667,"14.692778,-17.446667",1,1
+dal,Dallas,USA,"Dallas, USA",North America,32.7767,-96.797,"32.7767,-96.797",0,0
+dar,Dar es Salaam,Tanzania,"Dar es Salaam, Tanzania",Africa,-6.776,39.1783,"-6.776,39.1783",1,1
+dc,Washington DC,USA,"Washington DC, USA",North America,38.9072,-77.0375,"38.9072,-77.0375",1,0
+dc_NIST,Washington DC,USA,"Washington DC, USA",North America,38.9072,-77.0375,"38.9072,-77.0375",0,0
+del,Delhi NCT,India,"Delhi NCT, India",South & West Asia,28.6139,77.209,"28.6139,77.209",1,0
+den,"Denver,CO",USA,"Denver,CO, USA",North America,39.7392,-104.9903,"39.7392,-104.9903",0,0
+det,Detroit,USA,"Detroit, USA",North America,42.3314,-83.0458,"42.3314,-83.0458",0,0
+dha,Dhaka,Bangladesh,"Dhaka, Bangladesh",South & West Asia,23.8103,90.4125,"23.8103,90.4125",1,0
+dln,Dalian,China,"Dalian, China",Central East Asia,38.914003,121.614682,"38.914003,121.614682",1,1
+dmv,DMV,USA,"DMV, USA",North America,39.11208,-76.80792,"39.11208,-76.80792",0,0
+dub,Dubai,United Arab Emirates,"Dubai, United Arab Emirates",South & West Asia,25.276987,55.296249,"25.276987,55.296249",1,1
+dur,Durban (eThekwini),South Africa,"Durban (eThekwini), South Africa",Africa,-29.8586804,31.0218404,"-29.8586804,31.0218404",1,1
+eku,Ekurhuleni,South Africa,"Ekurhuleni, South Africa",Africa,-26.1651806,28.2155179,"-26.1651806,28.2155179",1,0
+fre,Freetown,Sierra Leone,"Freetown, Sierra Leone",Africa,8.4656774,-13.2317226,"8.4656774,-13.2317226",1,1
+fuz,Fuzhou,China,"Fuzhou, China",Central East Asia,26.074507,119.296494,"26.074507,119.296494",1,1
+gua,Guadalajara,Mexico,"Guadalajara, Mexico",Latin America,20.6597,-103.3496,"20.6597,-103.3496",1,0
+gyq,Guayaquil,Ecuador,"Guayaquil, Ecuador",Latin America,-2.203816,-79.897453,"-2.203816,-79.897453",0,0
+gzh,Guangzhou,China,"Guangzhou, China",Central East Asia,23.12911,113.264385,"23.12911,113.264385",1,0
+han,Hanoi,Vietnam,"Hanoi, Vietnam","East, Southeast Asia & Oceania",21.028511,105.854444,"21.028511,105.854444",1,0
+har,"Hartford,CT",USA,"Hartford,CT, USA",North America,41.7658,-72.6734,"41.7658,-72.6734",0,0
+hcm,Ho Chi Minh City,Vietnam,"Ho Chi Minh City, Vietnam","East, Southeast Asia & Oceania",10.8230989,106.6296638,"10.8230989,106.6296638",1,1
+hei,Heidelberg,Germany,"Heidelberg, Germany",Europe,49.398348,8.672653,"49.398348,8.672653",1,0
+hk,Hong Kong,China,"Hong Kong, China",Central East Asia,22.3193039,114.1693611,"22.3193039,114.1693611",1,1
+hou,"Houston,TX",USA,"Houston,TX, USA",North America,29.7604,-95.3698,"29.7604,-95.3698",1,1
+hyd,Hyderabad,India,"Hyderabad, India",South & West Asia,17.387140,78.491684,"17.387140,78.491684",0,0
+hzh,Hangzhou,China,"Hangzhou, China",Central East Asia,30.274084,120.1550708,"30.274084,120.1550708",1,0
+ind,"Indianapolis,IN",USA,"Indianapolis,IN, USA",North America,39.791000,-86.148003,"39.791000,-86.148003",0,0
+ist,Istanbul,Türkiye,"Istanbul, Türkiye",Europe,41.0082376,28.9783589,"41.0082376,28.9783589",1,0
+jac,"Jacksonville,FL",USA,"Jacksonville,FL, USA",North America,30.3298,-81.6592,"30.3298,-81.6592",0,1
+jak,Jakarta,Indonesia,"Jakarta, Indonesia","East, Southeast Asia & Oceania",-6.2087634,106.845599,"-6.2087634,106.845599",1,1
+joh,Johannesburg,South Africa,"Johannesburg, South Africa",Africa,-26.2041028,28.0473051,"-26.2041028,28.0473051",1,0
+kab,Kabul,Afghanistan,"Kabul, Afghanistan",South & West Asia,34.543896,69.160652,"34.543896,69.160652",0,0
+kua,Kuala Lumpur,Malaysia,"Kuala Lumpur, Malaysia","East, Southeast Asia & Oceania",3.139003,101.686855,"3.139003,101.686855",1,1
+kan,Kansas City,USA,"Kansas City, USA",North America,39.0997,-94.5786,"39.0997,-94.5786",0,0
+kar,Karachi,Pakistan,"Karachi, Pakistan",South & West Asia,24.8607,67.0011,"24.8607,67.0011",1,1
+kin,Kinshasa,DRC,"Kinshasa, DRC",Africa,-4.322447,15.307045,"-4.322447,15.307045",0,0
+kol,Kolkata,India,"Kolkata, India",South & West Asia,22.5726,88.3639,"22.5726,88.3639",1,0
+kyi,Kyiv,Ukraine,"Kyiv, Ukraine",Europe,50.450001,30.523333,"50.450001,30.523333",0,0
+la,"Los Angeles,CA",USA,"Los Angeles,CA, USA",North America,34.0522,-118.2437,"34.0522,-118.2437",1,1
+lag,Lagos,Nigeria,"Lagos, Nigeria",Africa,6.5243793,3.3792057,"6.5243793,3.3792057",1,1
+lah,Lahore,Pakistan,"Lahore, Pakistan",South & West Asia,31.582045,74.329376,"31.582045,74.329376",0,0
+las,"Las Vegas,NV",USA,"Las Vegas,NV, USA",North America,36.1699,-115.1398,"36.1699,-115.1398",0,0
+lim,Lima,Peru,"Lima, Peru",Latin America,-12.0464,-77.0428,"-12.0464,-77.0428",1,1
+lis,Lisbon,Portugal,"Lisbon, Portugal",Europe,38.7222524,-9.1393366,"38.7222524,-9.1393366",1,1
+lon,London,United Kingdom,"London, United Kingdom",Europe,51.5073509,-0.1277583,"51.5073509,-0.1277583",1,0
+lou,"Louisville,KY",USA,"Louisville,KY, USA",North America,38.2469,-85.7664,"38.2469,-85.7664",0,0
+lua,Luanda,Angola,"Luanda, Angola",Africa,-8.838333,13.234444,"-8.838333,13.234444",0,1
+mad,Madrid,Spain,"Madrid, Spain",Europe,40.4167754,-3.7037902,"40.4167754,-3.7037902",1,0
+man,Manchester,United Kingdom,"Manchester, United Kingdom",Europe,53.483959,-2.244644,"53.483959,-2.244644",0,0
+med,Medellín,Colombia,"Medellín, Colombia",Latin America,6.253,-75.5646,"6.253,-75.5646",1,0
+mel,Melbourne,Australia,"Melbourne, Australia","East, Southeast Asia & Oceania",-37.813995,144.963322,"-37.813995,144.963322",1,1
+mem,"Memphis,TN",USA,"Memphis,TN, USA",North America,35.1486,-90.0519,"35.1486,-90.0519",0,0
+mex,Mexico City,Mexico,"Mexico City, Mexico",Latin America,19.4326,-99.1332,"19.4326,-99.1332",1,0
+mia,"Miami,FL",USA,"Miami,FL, USA",North America,25.7617,-80.1918,"25.7617,-80.1918",1,1
+mil,Milan,Italy,"Milan, Italy",Europe,45.4642035,9.1899811,"45.4642035,9.1899811",1,0
+mlw,"Milwaukee,WI",USA,"Milwaukee,WI, USA",North America,43.041,-87.9097,"43.041,-87.9097",0,1
+mon,Montréal,Canada,"Montréal, Canada",North America,45.5017,-73.5673,"45.5017,-73.5673",1,0
+mos,Moscow,Russia,"Moscow, Russia","Europe",55.751244,37.618423,"55.751244,37.618423",0,0
+msp,"Minneapolis-Saint Paul,MN",USA,"Minneapolis-Saint Paul,MN, USA",North America,44.9778,-93.265,"44.9778,-93.265",0,0
+mty,Monterrey,Mexico,"Monterrey, Mexico",Latin America,25.686613,-100.316116,"25.686613,-100.316116",0,0
+mum,Mumbai,India,"Mumbai, India",South & West Asia,19.076,72.8777,"19.076,72.8777",1,1
+nai,Nairobi,Kenya,"Nairobi, Kenya",Africa,-1.2920659,36.8219462,"-1.2920659,36.8219462",1,0
+nag,Nagoya,Japan,"Nagoya, Japan","East, Southeast Asia & Oceania",35.183334,136.899994,"35.183334,136.899994",0,1
+naj,Nanjing,China,"Nanjing, China",Central East Asia,32.060255,118.796877,"32.060255,118.796877",1,0
+nas,"Nashville,TN",USA,"Nashville,TN, USA",North America,36.1627,-86.7816,"36.1627,-86.7816",0,0
+nor,"New Orleans,LA",USA,"New Orleans,LA, USA",North America,29.9511,-90.0715,"29.9511,-90.0715",1,0
+nyc,"New York City,NY",USA,"New York City,NY, USA",North America,40.7128,-74.006,"40.7128,-74.006",1,0
+nzh,"Nanjing&Zhenjiang",China,"Nanjing&Zhenjiang, China",Central East Asia,32.12042,119.09625,"32.12042,119.09625",0,0
+okc,"Oklahoma City,OK",USA,"Oklahoma City,OK, USA",North America,35.4689,-97.5195,"35.4689,-97.5195",0,0
+orl,"Orlando,FL",USA,"Orlando,FL, USA",North America,28.5384,-81.3789,"28.5384,-81.3789",0,0
+osa,Osaka,Japan,"Osaka, Japan","East, Southeast Asia & Oceania",34.6937,135.5023,"34.6937,135.5023",0,1
+osl,Oslo,Norway,"Oslo, Norway",Europe,59.88,10.7522454,"59.88, 10.7522454",1,0
+oua,Ouagadougou,Burkina Faso,"Ouagadougou, Burkina Faso",Africa,12.36566,-1.53388,"12.36566,-1.53388",0,0
+pap,Port-au-Prince,Haiti,"Port-au-Prince, Haiti",Latin America,18.533333,-72.333336,"18.533333,-72.333336",0,1
+par,Paris,France,"Paris, France",Europe,48.856613,2.352222,"48.856613,2.352222",1,0
+phl,"Philadelphia,PA",USA,"Philadelphia,PA, USA",North America,39.9526,-75.1652,"39.9526,-75.1652",1,0
+phn,Phnom Penh,Cambodia,"Phnom Penh, Cambodia","East, Southeast Asia & Oceania",11.562108,104.888535,"11.562108,104.888535",0,0
+phx,"Phoenix,AZ",USA,"Phoenix,AZ, USA",North America,33.4484,-112.074,"33.4484,-112.074",1,0
+pit,"Pittsburgh,PA",USA,"Pittsburgh,PA, USA",North America,40.4387,-79.9972,"40.4387,-79.9972",0,0
+por,"Portland,OR",USA,"Portland,OR, USA",North America,45.5051,-122.675,"45.5051,-122.675",1,0
+pvd,"Providence,RI",USA,"Providence,RI, USA",North America,41.8246,-71.4142,"41.8246,-71.4142",0,1
+qin,Qingdao,China,"Qingdao, China",Central East Asia,36.067108,120.382609,"36.067108,120.382609",1,0
+que,Quezon City,Philippines,"Quezon City, Philippines","East, Southeast Asia & Oceania",14.676041,121.0437,"14.676041,121.0437",1,1
+qui,Quito,Ecuador,"Quito, Ecuador",Latin America,-0.1807,-78.4678,"-0.1807,-78.4678",1,0
+ral,"Raleigh,NC",USA,"Raleigh,NC, USA",North America,35.7796,-78.6382,"35.7796,-78.6382",0,0
+ric,"Richmond,VA",USA,"Richmond,VA, USA", North America,37.5407,-77.436,"37.5407,-77.436",0,0
+rio,Rio de Janeiro,Brazil,"Rio de Janeiro, Brazil",Latin America,-22.9068,-43.1729,"-22.9068,-43.1729",1,1
+riv,"Riverside,CA",USA,"Riverside,CA, USA",North America,33.9806,-117.3755,"33.9806,-117.3755",0,0
+riy,Riyadh,Saudi Arabia,"Riyadh, Saudi Arabia","South & West Asia",24.774265,46.738586,"24.774265,46.738586",0,0
+rom,Rome,Italy,"Rome, Italy",Europe,41.9027835,12.4963655,"41.9027835,12.4963655",1,1
+rot,Rotterdam,The Netherlands,"Rotterdam, The Netherlands",Europe,51.9228936,4.4631795,"51.9228936,4.4631795",1,1
+sac,"Sacramento,CA",USA,"Sacramento,CA, USA",North America,38.5781,-121.4944,"38.5781,-121.4944",0,0
+sal,Salvador,Brazil,"Salvador, Brazil",Latin America,-12.9716,-38.5014,"-12.9716,-38.5014",1,1
+san,Santiago,Chile,"Santiago, Chile",Latin America,-33.4489,-70.6693,"-33.4489,-70.6693",1,0
+sao,São Paulo,Brazil,"São Paulo, Brazil",Latin America,-23.5505,-46.6333,"-23.5505,-46.6333",1,1
+sdo,Santo Domingo,Dominican Republic,"Santo Domingo, Dominican Republic",Latin America,18.483402,-69.929611,"18.483402,-69.929611",0,1
+sea,"Seattle,WA",USA,"Seattle,WA, USA",North America,47.6062,-122.3321,"47.6062,-122.3321",1,1
+seo,Seoul,South Korea,"Seoul, South Korea","East, Southeast Asia & Oceania",37.5666791,126.9782914,"37.5666791,126.9782914",1,1
+sf,"San Francisco,CA",USA,"San Francisco,CA, USA",North America,37.7749,-122.4194,"37.7749,-122.4194",1,1
+shg,Shanghai,China,"Shanghai, China",Central East Asia,31.2303904,121.4737021,"31.2303904,121.4737021",1,1
+shz,Shenzhen,China,"Shenzhen, China",Central East Asia,22.543096,114.057865,"22.543096,114.057865",1,0
+sin,Singapore,Singapore,"Singapore, Singapore","East, Southeast Asia & Oceania",1.352083,103.819836,"1.352083,103.819836",1,1
+sjc,"San Jose,CA",USA,"San Jose,CA, USA",North America,37.3387,-121.8853,"37.3387,-121.8853",0,0
+sjn,San Juan,Puerto Rico,"San Juan, Puerto Rico",North America,18.4153,-66.0594,"18.4153,-66.0594",0,1
+slc,"Salt Lake City,UT",USA,"Salt Lake City,UT, USA",North America,40.758701,-111.876183,"40.758701,-111.876183",0,0
+slo,"St. Louis,MO",USA,"St. Louis,MO, USA",North America,38.6274,-90.1982,"38.6274,-90.1982",0,0
+sna,"San Antonio,TX",USA,"San Antonio,TX, USA",North America,29.424349,-98.491142,"29.424349,-98.491142",0,0
+snd,"San Deigo,CA",USA,"San Diego,CA, USA",North America,32.715736,-117.161087,"32.715736,-117.161087",0,1
+sto,Stockholm,Sweden,"Stockholm, Sweden",Europe,59.3293235,18.0685808,"59.3293235,18.0685808",1,1
+syd,Sydney,Australia,"Sydney, Australia","East, Southeast Asia & Oceania",-33.8688197,151.2092955,"-33.8688197,151.2092955",1,1
+teh,Tehran,Iran,"Tehran, Iran","South & West Asia",35.715298,51.404343,"35.715298,51.404343",0,0
+tel,Tel Aviv - Yafo,Israel,"Tel Aviv - Yafo, Israel",Europe,32.0852999,34.7817676,"32.0852999,34.7817676",1,0
+tia,Tianjin,China,"Tianjin, China",Central East Asia,39.133331,117.183334,"39.133331,117.183334",0,0
+tij,Tijuana,Mexico,"Tijuana, Mexico",Latin America,32.522499,-117.046623,"32.522499,-117.046623",0,0
+tok,Tokyo,Japan,"Tokyo, Japan","East, Southeast Asia & Oceania",35.682839,139.759455,"35.682839,139.759455",1,1
+tor,Toronto,Canada,"Toronto, Canada",North America,43.6532,-79.3832,"43.6532,-79.3832",1,1
+tpa,Tampa,USA,"Tampa, USA",North America,27.9506,-82.4572,"27.9506,-82.4572",0,1
+tsh,Tshwane,South Africa,"Tshwane, South Africa",Africa,-25.6051,28.3929,"-25.6051,28.3929",1,0
+van,Vancouver,Canada,"Vancouver, Canada",North America,49.2827,-123.1207,"49.2827,-123.1207",1,1
+vib,"Virginia Beach,VA",USA,"Virginia Beach,VA, USA",North America,36.8516,-75.9792,"36.8516,-75.9792",0,1
+war,Warsaw,Poland,"Warsaw, Poland",Europe,52.2296756,21.0122287,"52.2296756,21.0122287",1,0
+wuh,Wuhan,China,"Wuhan, China",Central East Asia,30.592849,114.305539,"30.592849,114.305539",1,0
+xia,Xi'An,China,"Xi'An, China",Central East Asia,34.274342,108.889191,"34.274342,108.889191",0,0
+yok,Yokohama,Japan,"Yokohama, Japan","East, Southeast Asia & Oceania",35.4437076,139.6380256,"35.4437076,139.6380256",1,1
+zhe,Zhenjiang,China,"Zhenjiang, China",Central East Asia,32.189159,119.425836,"32.189159,119.425836",1,0
