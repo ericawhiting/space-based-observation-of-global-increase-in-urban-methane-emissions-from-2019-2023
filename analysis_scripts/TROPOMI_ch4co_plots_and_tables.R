@@ -563,10 +563,6 @@ ggsave("figure_4.png", plot = network_sum_plot, device = "png", path = path_to_p
 network_sum_df %>% filter(year == 2019) %>% select(year, C40, mean)
 network_sum_df %>% filter(year == 2023) %>% select(year, C40, mean)
 
-# 2020-2023
-# nonc40: 11.99% --> 12%
-# c40: 0.095% --> 10%
-
 # -------------------------------
 # urban contribution (total error)
 # -------------------------------
@@ -584,16 +580,6 @@ allcities_sum_total_df
 geometric.mean <- function(x, na.rm = TRUE) {
   exp(mean(log(x), na.rm = na.rm))
 }
-
-mean(c(1 + (23.5-23.2)/23.2, 1 + (23.8 - 23.5)/ 23.5, 1 + (23.9 - 23.8)/ 23.8))
-#<1%
-mean(c(1 + (23.5-24.3)/ 24.3, 1 + (24.4-23.5)/23.5, 1 + (25.2 - 24.4)/24.4, 1 + (25.9-25.2)/25.2))
-#1.6%, though changing by often 3% each year
-# EDGAR
-geometric.mean(c(1 + (23.5-23.2)/23.2, 1 + (23.8 - 23.5)/ 23.5, 1 + (23.9 - 23.8)/ 23.8)) -1
-# CH4 Obs
-geometric.mean(c(1 + (23.5-24.3)/ 24.3, 1 + (24.4-23.5)/23.5, 1 + (25.2 - 24.4)/24.4, 1 + (25.9-25.2)/25.2)) -1
-# 3.3% if absolute value of change
 
 # change
 change_df <- si_table_data %>%
@@ -613,11 +599,6 @@ total_pct_change_df <- change_df %>%
   summarize(avg_pct_change_inv = mean(pct_change_8, na.rm = TRUE), sd_pct_change_inv = sd(pct_change_8, na.rm = TRUE),
             avg_pct_change_obs = mean(pct_change, na.rm = TRUE), sd_pct_change_obs = sd(pct_change, na.rm = TRUE))
 total_pct_change_df
-
-# 2.35% (19.0%) for non C40 cities
-# 2.45% (16.2%) for C40 cities
-
-# 1.35% (7.12%) for inventory of c40 cities
 
 # ------------
 # DIFFERENCE DISTRIBUTIONS
@@ -722,7 +703,6 @@ ci_95_C40 <- df_mc_C40 %>%
 ci_95_C40 %>% filter(section == "Multiple Years")
 
 # look at change manually
-
 ci_95_C40[(ci_95_C40$C40 == 0) & (ci_95_C40$diff_pair == "diff_2023_2020"), "mean"]
 
 histogram_2 <- ggplot(data = df_mc_C40, aes(x = mc_values, fill = year_group_name)) +
@@ -736,5 +716,3 @@ geom_histogram(position = "identity", alpha = 0.75, bins = 50) +
   scale_fill_manual(values = regional_palette) +
   theme_linedraw() + plot_theme_text + theme(panel.border = element_rect(color = "black", fill = NA, linewidth = 1))
 ggsave("SI_difference_histograms.png", plot = histogram_2, device = "png", path = path_to_plots, width = 16, height = 6, dpi = 320, bg = "white")
-
-# could also look at this by region, or for 72 cities in total
