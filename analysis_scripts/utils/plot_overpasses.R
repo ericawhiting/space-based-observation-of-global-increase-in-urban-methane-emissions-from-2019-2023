@@ -212,10 +212,11 @@ plot_satellite_overpass <- function(city, orbit_number, title_key_1, title_key_2
   co_prior <- ncvar_get(nc_co, "PRODUCT/SUPPORT_DATA/INPUT_DATA/carbonmonoxide_profile_apriori", start = c(50, 1, 1, 1), count = c(1, dim(co_lat)[1], dim(co_lat)[2], 1)) # prior column enhancement
   nc_close(nc_co)
 
-  # might want to add back in original cropping so that spatial plots show more than just urban domain
+
   # -------------------------------
   # Crop to city
   # -------------------------------
+  # cropping to larger than the city to show where urban domain lies, check orbit at true city domain size to see if it will pass filtering!!
   city_coords <- cbind(city_latlon[1] - (delta_lat + 0.15), city_latlon[1] + (delta_lat + 0.15),
                          city_latlon[2] - (delta_lon + 0.15 * lat_adj), city_latlon[2] + (delta_lon + 0.15 * lat_adj))
   city_mask <- which((as.vector(ch4_lat) > city_coords[1]) & (as.vector(ch4_lat) < city_coords[2]) &
@@ -420,7 +421,7 @@ plot_satellite_overpass <- function(city, orbit_number, title_key_1, title_key_2
     }
     rownames(prior_bkg_percentile) <- c(c("min", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%",
                                           "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%", "24%", "25%"))
-# -------------------------------
+    # -------------------------------
     # Calculate Ratio of Summed Enhancements:
     # subtract off background, scale by surface averaging kernel, adjust for prior bias to urban regions
     # -------------------------------
@@ -443,8 +444,8 @@ plot_satellite_overpass <- function(city, orbit_number, title_key_1, title_key_2
     # SNR Filtering with CO
     # -------------------------------
     n_points_vec <- dim(filtered_data)[1]
-    # adjusted to allow plotting bc now using larger domain to describe entire plot bounds, changes the n points
-    if (summed_co_enhancements[14] > (n_points_vec * 6)) { # checks 15% background value
+    # larger domain based on city_coords mask, set extra buffer added in to 0 to look only at urban domain
+    if (summed_co_enhancements[12] > (n_points_vec * 7)) { # checks 15% background value
       # ratio of summed enhancements
       ch4co_ratio_of_summed_enhancements <- summed_ch4_enhancements / summed_co_enhancements # dim: city_orbits, background options
 
@@ -466,10 +467,7 @@ plot_satellite_overpass <- function(city, orbit_number, title_key_1, title_key_2
       corr_co_albedo <- cor(filtered_data$co_albedo, filtered_data$co, use = "complete.obs")
 
       # plot mixing ratios
-      # only looks at urban domain, not outside/zoomed out at all
-      #large_urban_domain <- rast(ext = terra::ext(as.vector(cbind(city_latlon[2] - (delta_lon + 0.5 * lat_adj), city_latlon[2] + (delta_lon + 0.5 * lat_adj),
-      #                                    city_latlon[1] - (delta_lat + 0.5), city_latlon[1] + (delta_lat+0.5)))), resolution = 0.05)
-
+      # is zoomed out compared to ideal city boxsize based on adjustment in making city_coords
       ch4_df2 <- DataFrameforPlot2(filtered_filled_data_ch4$ch4, filtered_filled_data_ch4$ch4_lat, filtered_filled_data_ch4$ch4_lon,
                                    filtered_filled_data_ch4$ch4_lat_b1, filtered_filled_data_ch4$ch4_lat_b2, filtered_filled_data_ch4$ch4_lat_b3, filtered_filled_data_ch4$ch4_lat_b4,
                                    filtered_filled_data_ch4$ch4_lon_b1, filtered_filled_data_ch4$ch4_lon_b2, filtered_filled_data_ch4$ch4_lon_b3, filtered_filled_data_ch4$ch4_lon_b4)
