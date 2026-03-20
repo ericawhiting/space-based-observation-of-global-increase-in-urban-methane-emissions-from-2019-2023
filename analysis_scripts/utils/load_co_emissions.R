@@ -153,6 +153,7 @@ load_htap_co_emissions <- function(inv_version, year) {
 }
 
 scale_edgar_by_htap <- function(urban_domain_rast, sf_flag = FALSE) {
+  #' can skip if not scaling using htap (important in Shanghai), 
   #' use city total HTAPv3 to scale city total EDGAR v8.1 CO sum for cities that have unrealistic CO values (shg)
   #' @param urban_domain_rast terra rast to crop edgar and htap grids down to in order to find city sum
   #' @param sf_flag if the urban domain outline is not a rast, it will be a sf (csf outline) and a mask must be applied in cropping within return_cell_values
@@ -267,6 +268,7 @@ find_co_emissions_from_monthly <- function(city, urban_domain_rast, year_list, o
     year_month_df <- rbind(year_month_df, data.frame(year = rep(y), month = seq(1, 12)))
   }
   all_years_co <- do.call(abind, (c(arrays_list, along = 2))) # # grid cells vs total num months
+  # remove this next if statement if not scaling by HTAP co emissions
   if (city == "shg") {
     scale <- scale_edgar_by_htap(urban_domain_rast)
     print("scaled by HTAP")

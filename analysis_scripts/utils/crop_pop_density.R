@@ -2,6 +2,7 @@
 # E.Whiting 2022-6-17
 
 # crop population density down to use when finding city center in find_city_center_from_pop_dens in urban_boundaries.R
+# can skip this step by using supplied city_center_from_pop_density.R and adjusting urban_boundaries.R/find_city_center_from_pop_dens to read from that csv file instead
 # -------------------------------
 # Load Libraries & Set Paths
 # -------------------------------

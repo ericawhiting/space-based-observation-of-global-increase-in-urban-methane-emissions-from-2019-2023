@@ -2,8 +2,10 @@
 
 echo "Cropping GFAS"
 
-#already converted GFAS grib to nc using cdo
-#cdo -f nc copy GFAS_CO_2019_2023.grib GFAS_CO_2019_2023.nc
+# download GFAS data 2019-2023, may have to download years individually and concatenate (use cdo mergetime for merging nc files on time axis)
+# already converted GFAS grib to nc using cdo:
+    # cdo -f nc copy GFAS_CO_2019_2023.grib GFAS_CO_2019_2023.nc
+# or download as .nc
 
 # The path to the CSV file
 csv_file="../Data/city_information/city_bounds_larger.csv" # larger than domain
@@ -27,7 +29,7 @@ tail -n +2 "$csv_file" | while IFS=',' read -r city lat lon degrees_latitude; do
     max_lat=$(echo "$lat + $degrees_latitude" | bc -l)
 
     # Using cdo to crop the global file to the city's bounding box
-    cdo sellonlatbox,$min_lon,$max_lon,$min_lat,$max_lat ../Data/GFAS/GFAS_CO_2018_2024.nc "../Data/GFAS/city_GFAS/${city}_cropped_GFAS.nc"
+    cdo sellonlatbox,$min_lon,$max_lon,$min_lat,$max_lat ../Data/GFAS/global_GFAS_data/GFAS_CO_2019_2023.nc "../Data/GFAS/city_GFAS/${city}_cropped_GFAS.nc"
 
     # check exit status of cdo to ensure the operation was successful
     if [ $? -eq 0 ]; then

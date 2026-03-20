@@ -145,6 +145,7 @@ find_city_coastal_flag <- function(city) {
 }
 
 find_city_center_from_pop_dens <- function(city) {
+  ### could instead read from city_center_from_pop_density.csv instead of needing to calculate by using find_city_latlon_adjusted below
   # output lat lon
   # original city center above has been used to crop large section of pop data, then we find the max in it
   city_latlon <- find_city_latlon(city) #returns lat, lon  (y,x) of city center
@@ -166,7 +167,7 @@ find_city_center_from_pop_dens <- function(city) {
 }
 
 find_city_latlon_adjusted <- function(city) {
-  # pull city center that was based oirignally on pop dens but was adjusted to maximize land pixels rather than water
+  # pull city center that was based oirignally on pop dens
   df_city_locations_adjusted <- read.csv(paste0(path_to_data, "city_information/city_center_from_pop_density.csv"), header = TRUE)
   df_city <- df_city_locations_adjusted[df_city_locations_adjusted$code == city, ]
   city_latlon <- c(df_city$lat, df_city$lon)
@@ -187,6 +188,7 @@ write_df_of_city_centers <- function() {
 
 find_EDGAR_uncertainty <- function(city) {
   #' pulls uncertainty on EDGAR emissions inventory values based on country or country group
+  #' These values come from the SI of M. Crippa et al., Gridded emissions of air pollutants for the period 1970–2012 within Edgar v4.3.2. Earth Syst. Sci. Data 10, 1987–2013 (2018)
 
   country <- find_city_country(city)
   EU28_list <- c("EU28", "Belgium", "Bulgaria", "Czech Republic", "Denmark", "Germany", "Estonia", "Ireland", "Greece",
@@ -221,7 +223,8 @@ find_city_hemisphere <- function(city) {
 }
 
 return_city_boundary_flags <- function(city) {
-  # due to neighboring cities
+  # due to neighboring cities, we use this flag to download TROPOMI data under one city code and access it
+  # be careful to then remove these cities from analysis so as to not double count emissions!
   if ((city == "dc") || (city == "blt")) {
     return("dmv")
   } else if ((city == "naj") || (city == "zhe")) {

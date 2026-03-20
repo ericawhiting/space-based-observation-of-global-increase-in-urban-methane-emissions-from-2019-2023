@@ -1,3 +1,6 @@
+# SRON uncertainty is the uncertainty in CO change over time
+# full_uncertainty is the full EDGAR uncertainty given by find_EDGAR_uncertainty in urban_boundaries.R, citation for source in function description
+
 # -------------------------------
 # Load Libraries & Set Paths
 # -------------------------------
@@ -9,6 +12,7 @@ source(paste0(path_to_utils, "load_co_emissions.R"))
 
 path_to_data <- "../Data/" # change your path here
 
+# could run with any uncertainty option!
 co_emissions_path_full_uncertainty <- paste0(path_to_data, "EDGAR_co_emissions_realizations/full_uncertainty/")
 co_emissions_path_SRON_uncertainty <- paste0(path_to_data, "EDGAR_co_emissions_realizations/SRON_uncertainty/")
 co_emissions_path_no_uncertainty  <-  paste0(path_to_data, "EDGAR_co_emissions_realizations/no_uncertainty/")
@@ -55,9 +59,11 @@ foreach(i = seq_along(city_list)) %dopar% {
         # # Full Uncertainty, All Months
         # annual_co_emissions_full_uncertainty <- find_co_emissions_from_monthly(city, urban_domain_rast, year_list, obs_year_month_list, aggregate = "annual", all_months = TRUE, uncertainty_method = "full_uncertainty", sf_flag = sf_flag)
         # write.table(annual_co_emissions_full_uncertainty, paste0(co_emissions_path_full_uncertainty, "annual/", city, "_realizations_annual_co_emissions_from_monthly_edgarv8.1.csv"), row.names = FALSE, sep = ",")
+        
         # SRON Uncertainty, All Months
         annual_co_emissions_SRON_uncertainty <- find_co_emissions_from_monthly(city, urban_domain_rast, year_list, obs_year_month_list, aggregate = "annual", all_months = TRUE, uncertainty_method = "SRON_uncertainty", sf_flag = sf_flag)
         write.table(annual_co_emissions_SRON_uncertainty, paste0(co_emissions_path_SRON_uncertainty, "annual/", city, "_realizations_annual_co_emissions_from_monthly_edgarv8.1.csv"), row.names = FALSE, sep = ",")
+        
         # Full Uncertainty, Months with Obs Only
         # annual_co_emissions_full_uncertainty_matchmos <- find_co_emissions_from_monthly(city, urban_domain_rast, year_list, obs_year_month_list, aggregate = "annual", all_months = FALSE, uncertainty_method = "full_uncertainty", sf_flag = sf_flag)
         # write.table(annual_co_emissions_full_uncertainty_matchmos, paste0(co_emissions_path_full_uncertainty, "annual/", city, "_realizations_annual_co_emissions_matchmos_from_monthly_edgarv8.1.csv"), row.names = FALSE, sep = ",")

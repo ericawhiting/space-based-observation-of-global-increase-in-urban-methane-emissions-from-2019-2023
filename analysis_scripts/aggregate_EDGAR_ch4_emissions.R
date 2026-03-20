@@ -59,9 +59,9 @@ foreach(i = seq_along(city_list)) %do% {
         annual_ch4_emissions <- find_ch4_emissions_from_monthly(city, urban_domain_rast, year_list, obs_year_month_list, version, aggregate = "annual", all_months = TRUE)
         write.table(annual_ch4_emissions, paste0(ch4_emissions_path, "annual/", city, "_annual_ch4_emissions_from_monthly_edgar", version_name, ".csv"), row.names = FALSE, sep = ",")
 
-        # Months with Obs Only
-        annual_ch4_emissions_matchmos <- find_ch4_emissions_from_monthly(city, urban_domain_rast, year_list, obs_year_month_list, version, aggregate = "annual", all_months = FALSE)
-        write.table(annual_ch4_emissions_matchmos, paste0(ch4_emissions_path, "annual/", city, "_annual_ch4_emissions_matchmos_from_monthly_edgar", version_name, ".csv"), row.names = FALSE, sep = ",")
+        # Months that we have Obs in Only
+        # annual_ch4_emissions_matchmos <- find_ch4_emissions_from_monthly(city, urban_domain_rast, year_list, obs_year_month_list, version, aggregate = "annual", all_months = FALSE)
+        # write.table(annual_ch4_emissions_matchmos, paste0(ch4_emissions_path, "annual/", city, "_annual_ch4_emissions_matchmos_from_monthly_edgar", version_name, ".csv"), row.names = FALSE, sep = ",")
 
         # -------------------------------
         # MONTHLY
