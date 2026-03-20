@@ -8,7 +8,7 @@
 These scripts and files were used to read TROPOMI CH4 and CO measurement data, calculate enhancement ratios for selected urban domains, and calculate annual CH4 emissions as is described in the publication "Space-based observation of global increase in urban methane emissions from 2019-2023" 
 
 ### code citation
-Whiting, E. and Plant, G., Space-based observation of global increase in urban methane emissions from 2019-2023 Code (v1.0). [Database]. Zenodo, doi:10.5281/zenodo.17582608
+Whiting, E., & Plant, G. (2026). Space-based observation of global increase in urban methane emissions from 2019-2023 Code (1.0). Zenodo. https://doi.org/10.5281/zenodo.17582608
 
 ### summary of files provided
 - analysis_scripts/
