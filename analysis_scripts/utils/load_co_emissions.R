@@ -283,6 +283,8 @@ find_co_emissions_from_monthly <- function(city, urban_domain_rast, year_list, o
     # sigma from find_EDGAR_uncertainty.R is a fraction, must be multiplied by mean value
   } else if (uncertainty_method == "SRON_uncertainty") {
     sigma_value <- 0.1210457 # SRON CO CSF study, average CO change
+  } else if (uncertainty_method == "30_uncertainty") {
+    sigma_value <- 0.3
   } else if (uncertainty_method == "no_uncertainty") {
     sigma_value <- 0
   }
